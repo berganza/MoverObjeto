@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="4">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="circuito.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="RLZ-Eo-qyh"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ferrari.png" translatesAutoresizingMaskIntoConstraints="NO" id="jba-Ug-9CT"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RLZ-Eo-qyh" firstAttribute="bottom" secondItem="5" secondAttribute="bottom" type="default" id="6kg-Wr-Dbv"/>
+                            <constraint firstAttribute="bottom" secondItem="jba-Ug-9CT" secondAttribute="bottom" constant="5" id="Q3u-eD-LVZ"/>
+                            <constraint firstItem="RLZ-Eo-qyh" firstAttribute="leading" secondItem="5" secondAttribute="leading" type="default" id="Qpv-mi-z6w"/>
+                            <constraint firstItem="jba-Ug-9CT" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="349" id="fAx-ae-UNk"/>
+                            <constraint firstItem="RLZ-Eo-qyh" firstAttribute="top" secondItem="5" secondAttribute="top" type="default" id="vgt-ny-d9M"/>
+                            <constraint firstItem="RLZ-Eo-qyh" firstAttribute="trailing" secondItem="5" secondAttribute="trailing" type="default" id="ydW-hv-LRe"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="ferrari" destination="jba-Ug-9CT" id="5gu-kO-wnW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circuito.jpg" width="483" height="363"/>
+        <image name="ferrari.png" width="64" height="64"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
